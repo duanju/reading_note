@@ -53,7 +53,8 @@ e.g. Instead of ask `READ_CONTACT` and `WRITE_CONTACT` permissions, we use inten
 + Use SharedPreferences in private mode
 
 ## Keep services and dependencies up-to-date
-<br/>
+
+&nbsp;
 
 ---
 Copyright © 2018. Ju Duan All Copyright.
