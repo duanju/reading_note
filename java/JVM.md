@@ -27,27 +27,31 @@
     + `number_of_exception`
     + `exception_index_table`
 3. LineNumberTable 属性。
+
     | 类型 | 名称 | 数量 |
-    | :- | :- | :- | :-
+    | :- | :- | :- |
     | u2 | attribute_name_index | 1 |
     | u4 | attribute_length | 1 |
     | u2 | line_number_table_length | 1 |
     | line_number_info | line_number_table | line_number_table |
 
     **line_number_info:**
+
     | 类型 | 名称 | 数量 | 描述
     | :- | :- | :- | :-
     | u2 | start_pc | 1 | 字节码行号
     | u2 | line_number | 1 | java代码行号
 4. LocalVariableTable属性。用于描述栈帧中局部表量表中的变量和Java源代码中定义的变量之间的关系。
+
     | 类型 | 名称 | 数量 |
-    || :- | :- | :- | :-
+    | :- | :- | :- |
     | u2 | attribute_name_index | 1 |
     | u4 | attribute_length | 1 |
     | u2 | local_variable_table_length | 1 |
     | local_variable_info | local_variable_table | local_variable_table_length |
 
     **line_number_info:**
+
     | 类型 | 名称 | 数量 | 描述
     | :- | :- | :- | :-
     | u2 | start_pc | 1 | 局部变量在字节码行中偏移 
@@ -66,13 +70,16 @@
     | u4 | attribute_length | 1 | 固定为2，也就是说ConstantVlaue属性是固定长度
     | u2| constantvalue_index| 1| 字面量常量引用。可以是多种类型，例如CONSTANT_Long_info, CONSTANT_String_info等。
 8. InnerClass属性
+
     | 类型 | 名称 | 数量 | 描述
     | :- | :- | :- | :-
     | u2 | attribute_name_index | 1 |
     | u4 | attribute_length | 1 |
     | u2 | number_of_class | 1 |
     | inner_class_info | inner_classs | 1 |
+  
     **InnerClassInfo:**
+
     | 类型 | 名称 | 数量 | 描述
     | :- | :- | :- | :-
     | u2 | inner_class_info_index | 1 |
