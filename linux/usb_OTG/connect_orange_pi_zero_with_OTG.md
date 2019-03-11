@@ -11,3 +11,8 @@ use the command 'sudo minicom /dev/ttyACM0'
 
 Config your minicom if it is your fist time to use this tool. please refer this [webpage](http://www.orangepi.org/Docs/LogintotheOrangePi.html#Using_TTL_serial_port).
 > **Note**: The orange pi zero has featured the usb OTG, we don't need the additional device, "PL2303".
+
+### Useful command
+
+1. Ctrl+a for help;
+2. Ctrl+a, x to leaving minicom.
