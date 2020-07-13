@@ -62,3 +62,54 @@ Remove uncompatible libs:
 
 ` npm uninstall `
 
+# Style
+
+use camel casing. e.g backgroundColor rather than background-color
+
+StyleSheet.create
+
+# Height and Width
+
+density-independent pixels
+
+# Layout with flexbox
+
+## flexDirection
+
+` column`, ` row-reversse`, `column-reverse`
+
+## Layout Direction
+
+`LTR`, `RTL`
+
+## Justify Content
+
+`justifyContent`:
+
+1. flex-start
+2. flex-end
+3. center
+4. space-between
+5. space-around
+6. space-evenly
+
+## Align Items
+
+`Align Items`:
+1. stretch
+2. flex-start
+3. flex-end
+4. center
+5. baseline
+
+## Align Self
+
+## Align Content
+
+## Flex Wrap
+
+## Flex Basis, Grow, and Shrink
+
+## Width and Height
+
+## Absolute & Relative Layout
