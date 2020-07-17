@@ -1,0 +1,239 @@
+1.2.1 HTML5语法
+
+字符编码
+<meta charset='utf-8'/>
+Doctype 文档类型
+<!doctype html>
+<svg> <circle xxx/></svg>
+<math>
+
+1.2.2 新增与废除的元素和属性
+
+新增的与结构相关的元素
+
+主体结构元素：
+<section>
+<artical>
+<aside>
+<nav>
+
+非主体结构元素：
+<header>
+<hgroup>
+<footer>
+<figure>
+<figcaption>
+
+与结构无关的元素：
+<video>
+<audio>
+<embed>
+<mark>
+<progress>
+<progress>
+<time>
+<ruby>
+<rt>
+<rp>
+<wbr>
+<canvas>
+<command>
+<details>
+<summary>
+<datalist>
+<datagrid>
+<keygen>
+<output>
+<source>
+<menu>
+
+表单元素类型：
+<email>
+<url>
+<number>
+<range>
+
+表单相关属性：
+
+新增链接相关属性：
+
+新增的其它属性：
+
+Async 属性是外部js脚步异步执行
+defer 属性使得脚步在页面完成解析的时候执行
+
+html元素增加manifest属性用于离线web应用开发
+
+iframe增加 sandbox, seamless和srcdoc属性，防止不信任的web页面执行某些操作
+
+废除 basefount， big， center， font， s, strike, tt, u等
+
+废除了frame框架元素. frameset, frame, noframes
+
+废除了 marquee, bgsound, applet, blink
+
+其它被替换的元素：
+
+rb -> ruby
+acronym -> abbr
+dir -> ul
+isindex -> from+input
+listing -> pre
+xmp -> code
+nextid -> GUIDS
+plaintext-> "text/plain"
+
+
+1.2.3 全局属性
+
+1. contentEditable
+2. designMode   //该属性只能通过JavaScript进行编辑
+3. hidden属性
+4. spellcheck
+5. tabindex
+
+1.2.4 HTML5中新增的API
+
+第二章 HTML元素、属性与结构
+
+2.1 HTML元素
+2.2 HTML5元素
+
+属性值的3种表现形式：
+
+name='value' 单引号
+name="value" 双引号
+name=value 省略引号
+
+HTML5其它全局属性：
+
+class, id, title, style, accesskey, dir, contextmenu, draggable, dropzone
+
+<button accesskey="q">快捷键是Alt+q</button>
+<bdo dir="rtl>1234567</bdo> //dir: rtl, ltr, auto
+<p draggable="true">Drag this text</p>
+
+2.3 新增的主体结构元素
+
+section //section 不仅仅是一个普通的容器标签。当一个标签只是为了样式化或者方便脚本使用时，应该使用div。一般来说，当元素内容明确地出现在文档大纲中时，section 就是适用的。
+article //当元素内容聚合起来更加言之有物时，应该使用 article 来替换 section
+nav
+aside //用来定义article以外的元素，其内容应该和article相关。
+time //datetime="2014-10-1T9:00+8:00"
+
+2.4 新增的非主体结构元素
+
+header/hgroup
+footer
+address
+
+2.5 HTML5结构
+
+2.5.1 文档结构大纲
+2.5.2 内容区块的编排方式
+
+显示编排，使用主体结构元素，内容区块元素和标题元素来构建文档结构。
+隐示编排，仅使用标题元素创建文档。
+
+标题分类： h1～h6
+
+第二章 JavaScript简介
+
+文档对象模型（DOM）
+浏览器对象模型（BOM）
+
+JavaScript解析引擎是自上而下逐行解析代码
+
+[w3c css3](https://www.w3cschool.cn/css3/css3-borders.html)
+
+border-radius
+box-shadow
+border-image
+border-radius
+background-image
+background-size
+background-origin
+background-clip
+background: linear-gradient(angle, color-stop1, color-stop2);
+background: radial-gradient(red, yellow 10%, green 20%);
+background: radial-gradient(circle, red, yellow, green); /* 标准的语法 */ 
+text-shadow: 5px 5px 5px #FF0000;
+
+div { box-shadow: 10px 10px;} // X轴偏移量、Y轴偏移量、模糊半径、扩散半径和颜色
+overflow: hidden; 
+text-overflow: clip; // clip, ellipsis
+p {word-wrap:break-word;}
+
+创建字体规则
+@font-face
+{
+   font-family: myFirstFont;
+   src: url(sansation_light.woff);
+}
+
+div
+{
+   font-family:myFirstFont;
+}
+
+transform: rotate(30deg); 
+transform: translate(50px,100px); 
+transform: scale(2,4); 
+transform: skew(30deg,20deg); 
+transform: matrix(0.866,0.5,-0.5,0.866,0,0); 
+transform: rotateX(30deg) rotateY(30deg) rotateZ(10deg); //3d transform
+
+过渡：
+
+div
+{
+	transition: width 2s, height 2s, transform 2s; 
+	-webkit-transition:width 2s; /* Safari */
+}
+
+<!-- 鼠标悬停时候宽度变化 -->
+div:hover
+{
+	width:300px;
+    transform:rotate(10deg);
+}
+
+transition-timing-function
+
+
+column-count
+column-gap
+column-rule:3px outset #ff00ff; // 列之间的样式
+
+resize:both;
+boarder-size:content-box | border-box
+
+border:2px solid black;
+outline:2px solid red;
+outline-offset:15px;
+
+img {
+    border-radius: 8px;
+}
+
+自由缩放图片，且图片放大的尺寸不大于其原始的最大值
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+滤镜
+filter: blur(4px);
+
+响应式：
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+按钮禁用
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
