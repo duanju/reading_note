@@ -112,3 +112,14 @@ Progressive web App Metadata
 Build your app
 
 # Runing Tests
+
+# React Router
+
+Primary Components:
+
+1. Router, <BrowserRouter>, <StaticRouter> and <HashRouter>
+2. Route matcher, <Route> and <Switch>
+3. Navigation, <Link>, <NavLink>, <Redirect>
+
+Server Rendering
+
