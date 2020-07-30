@@ -121,5 +121,23 @@ Primary Components:
 2. Route matcher, <Route> and <Switch>
 3. Navigation, <Link>, <NavLink>, <Redirect>
 
+Matcher could be called multeple times for some times.
+
 Server Rendering
+
+# Redux
+
+Redux is a predictable state container for JavaScript Apps.
+
+Install
+	npm install @reduxjs/toolkit
+
+Create React Redux App
+	npx create-react-app my-app --template redux
+
+Install Redux Core
+	npm install redux
+
+## When should we use Redux
+
 
