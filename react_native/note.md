@@ -5,6 +5,9 @@ state
 ## Static Analysis:
 
 1. Linters
+
+["extends": "@react-native-community"](https://github.com/facebook/react-native/blob/master/packages/eslint-config-react-native-community/index.js)
+
 2. Type checking
 
 ESLint, Flow, TypeScript
@@ -14,6 +17,8 @@ ESLint, Flow, TypeScript
 Seperate the view part of your app-your React componets-from your business logic and app state.
 
 ## Write Tests
+
+Separating the view part of your app—your React components—from your business logic and app state
 
 ## Unit Tests
 
