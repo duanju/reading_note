@@ -51,9 +51,12 @@ install lib:
 
 ## Linking Native Code on IOS
 
+Run the `upgrade` command
+
 `
     npx prod-install
 `
+
 
 ## Linking Native Code on Android
 
@@ -66,6 +69,10 @@ React Native Directory: a searchable database of libs build for RN.
 Remove uncompatible libs:
 
 ` npm uninstall `
+
+# Upgrading to new React Native version
+
+` npx react-native upgrade`
 
 # Style
 
