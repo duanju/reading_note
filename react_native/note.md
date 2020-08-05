@@ -125,3 +125,41 @@ density-independent pixels
 ## Width and Height
 
 ## Absolute & Relative Layout
+
+# Publishing to Goolge Play Store
+
+Sign the apk with correct singing key using `keytool`.
+
+
+    sudo keytool -genkey -v -keystore my-upload-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+
+Config the gradlew file.
+
+    ...
+    android {
+        ...
+        defaultConfig { ... }
+        signingConfigs {
+            release {
+                if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
+                    storeFile file(MYAPP_UPLOAD_STORE_FILE)
+                    storePassword MYAPP_UPLOAD_STORE_PASSWORD
+                    keyAlias MYAPP_UPLOAD_KEY_ALIAS
+                    keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+                }
+            }
+        }
+        buildTypes {
+            release {
+                ...
+                signingConfig signingConfigs.release
+            }
+        }
+    }
+    ...
+
+
+Go to 'android' folder, run:
+
+`npx react-native run-android --variant=release`
