@@ -1,0 +1,19 @@
+{
+  "name": "reading_note",
+  "version": "1.0.0",
+  "description": "record my reading note and some practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duanju/reading_note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duanju/reading_note/issues"
+  },
+  "homepage": "https://github.com/duanju/reading_note#readme"
+}
