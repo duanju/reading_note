@@ -1,6 +1,6 @@
-# git commit format
+# Conventional Commits
 
-<header>:<type> [scope] <subject]>
+<header>:<type> [scope, scope(!)?] <subject]>
 
 subject 以第一人称现在时描述，长度不超过50字。结尾不加任何标点符号。
 
@@ -8,9 +8,9 @@ subject 以第一人称现在时描述，长度不超过50字。结尾不加任�
 
 以第一人称现在时描述。Body部分应该清楚包括当前改的的原因和前后行为的对比。
 
-[footer]:[Breaks] [Close]
+[footer]:[BREAKING CHANGE] [Close]
 
-## typs
+## the Angular convention types
 
 1. feat: 新功能
 2. fix
@@ -23,6 +23,10 @@ subject 以第一人称现在时描述，长度不超过50字。结尾不加任�
 9. chore
 10. ci
 11. revert
+
+## write good commit body
+
+![example](example_commit_body_linux.png)
 
 # commitlint
 
