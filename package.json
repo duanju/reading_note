@@ -17,8 +17,6 @@
   },
   "homepage": "https://github.com/duanju/reading_note#readme",
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.1",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "husky": "^4.2.5"
@@ -28,10 +26,9 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
-  "dependencies": {},
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true"
     }
   }
 }
